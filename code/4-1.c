@@ -1,8 +1,19 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
+  int a, b;
+  char op;
 
-    return 0;
+  scanf("%d %d %c", &a, &b, &op);
+
+  if (op == '+')
+    printf("%d\n", a + b);
+  else if (op == '-')
+    printf("%d\n", a - b);
+  else if (op == '*')
+    printf("%d\n", a * b);
+  else if (op == '/')
+    printf("%d\n", a / b);
+
+  return 0;
 }
-
