@@ -1,16 +1,13 @@
 #include <stdio.h>
 
 int main() {
-  int a, b, c;
+  int a = 32;
+  int b = 156;
 
-  a = b = c = 5;
-  printf("%d %d %d\n", a, b, c);
+  a = a ^ b;
+  b = a ^ b;
+  a = a ^ b;
 
-  a = 2 + 3 * 4;
-  printf("%d %d %d\n", a, b, c);
-
-  c = a++ + ++b;
-  printf("%d %d %d\n", a, b, c);
-
+  printf("%d %d\n", a, b);
   return 0;
 }
